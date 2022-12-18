@@ -7,8 +7,9 @@ class CPU():
     """
     This is the CPU class for the CHIP-8 emulator
     """
-    def __init__(self, display):
+    def __init__(self, display, debug=False):
         self.display = display
+        self.debug = debug
 
         self.memory = bytearray(4096)
 
@@ -102,7 +103,8 @@ class CPU():
         self.x = ((opcode & 0x0F00) >> 8) & 0xF
         self.y = ((opcode & 0x00F0) >> 4) & 0xF
         self.opcode = opcode
-        # print(self.opcode)
+        if self.debug:
+            print(self.opcode)
 
         match (opcode & 0xF000):
             case 0x0000:

@@ -16,7 +16,7 @@ args = parser.parse_args()
 display = Display(scale=args.scale)
 display.init_display()
 display.init_keys()
-cpu = CPU(display)
+cpu = CPU(display, args.debug)
 cpu.load_sprites_into_mem()
 cpu.load_rom(os.path.join("roms", args.rom_name))
 
