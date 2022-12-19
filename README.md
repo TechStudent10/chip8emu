@@ -2,6 +2,8 @@
 
 Made in a weekend!
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GjAk61PlAMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Usage
 
 > Note: Make sure all your ROMs are in the `roms/` directory. The emulator will read directly from there.
