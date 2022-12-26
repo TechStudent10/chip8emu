@@ -65,10 +65,10 @@ class Display:
         return not self.pixels[len(self.pixels) - 1]
 
     def clear_display(self):
-        self.screen.fill((0,0,0))
+        self.pixels = []
 
     def render(self):
-        self.clear_display()
+        self.screen.fill((0,0,0))
 
         for i in range(len(self.pixels)):
             pixel = self.pixels[i]

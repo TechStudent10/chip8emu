@@ -331,7 +331,7 @@ class CPU():
 
     def ld_i_vx(self):
         for reg_index in range(self.x):
-            print(self.i + reg_index)
+            print(self.v[reg_index])
             self.memory[self.i + reg_index] = self.v[reg_index]
 
     def ld_vx_i(self):
